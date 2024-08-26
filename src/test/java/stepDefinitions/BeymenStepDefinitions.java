@@ -36,7 +36,6 @@ public class BeymenStepDefinitions {
     public void anaSayfaninAcildigiKontrolEdilir(String url) {
         ReusableMethods.waitForVisibility(hp.cookiesAccept);
         hp.closeButton.click();
-        //ReusableMethods.waitForVisibility(hp.allertCloseButton);
 
         String expectedUrl = ConfigReader.getProperty(url);
         String actualUrl = Driver.getDriver().getCurrentUrl();
@@ -128,7 +127,6 @@ public class BeymenStepDefinitions {
 
     @Then("urun sepetten silinerek sepetin bos oldugunun dogrulanmasi {string}")
     public void urunSepettenSilinerekSepetinBosOldugununDogrulanmasi(String expectetTitle) {
-
         cp.productClearButton.click();
         String actualTitle = cp.emptyCartTitile.getText();
 
