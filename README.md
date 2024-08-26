@@ -6,6 +6,8 @@ Proje Ödevi
 - Projenizin OOP (Object Oriented Programming) prensiplerine uygun yazılması
 gerekmektedir.
 - Page Object Pattern kullanmanız gerekmektedir.
+
+  
 Selenium Web Otomasyon
 - www.beymen.com sitesi açılır.
 - Ana sayfanın açıldığı kontrol edilir.
@@ -21,6 +23,8 @@ Selenium Web Otomasyon
 - Ürün sayfasındaki fiyat ile sepette yer alan ürün fiyatının doğruluğu karşılaştırılır.
 - Adet arttırılarak ürün adedinin 2 olduğu doğrulanır.
 - Ürün sepetten silinerek sepetin boş olduğu kontrol edilir.
+
+
 Web Servis Otomasyon
 - Proje Java programlama dilinde yazılmalıdır.
 - Proje Maven projesi olarak yazılmalıdır.
@@ -29,6 +33,8 @@ Web Servis Otomasyon
 - Projenizin OOP (Object Oriented Programming) prensiplerine uygun
 yazılması gerekmektedir.
 - Page Object Pattern kullanmanız gerekmektedir.
+
+  
 Api Bilgileri
 - https://trello.com/app-key -> Key ve token bilgilerine ulaşabilirsiniz
 - https://developer.atlassian.com/cloud/trello/rest/ -> trello request
