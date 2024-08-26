@@ -50,7 +50,7 @@ public class BeymenStepDefinitions {
         hp.searchBox1.sendKeys(product);
         String a = hp.searchBox1.getText();
         ReusableMethods.wait(1);
-        LOG.info("arama kutucuguna "+product+" girilir");
+        LOG.info("arama kutucuguna " + product + " girilir");
     }
 
     @And("arama kutucuguna girilen urun silinir")
@@ -82,7 +82,8 @@ public class BeymenStepDefinitions {
 
         String filePath = "src/test/resources/productData.txt";
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
             writer.write(productDetails);
             writer.write("\n" + productPrice);
 
@@ -97,7 +98,7 @@ public class BeymenStepDefinitions {
 
         int number = new Random().nextInt(pp.productSizeList.size());
         pp.productSizeList.get(number).click();
-        ReusableMethods.wait(2);
+        ReusableMethods.wait(1);
         pp.addBasketButton.click();
         ReusableMethods.waitForVisibility(pp.myBasket);
         LOG.info("Secilen urun sepete eklenir");
@@ -106,10 +107,9 @@ public class BeymenStepDefinitions {
     @And("urun sayfasindaki fiyat ile sepette yer alan urun fiyatinin dogrulanmasi")
     public void urunSayfasindakiFiyatIleSepetteYerAlanUrunFiyatininDogrulanmasi() {
 
-        String actualPrice = cp.cartProductPrice.getText();
-        actualPrice = actualPrice.substring(0, 5);
-
+        String actualPrice = cp.cartProductPrice.getText().substring(0, 5);
         String expectedPrice = productPrice.substring(0, 5);
+
         assertEquals(expectedPrice, actualPrice);
         LOG.info("Urun sayfasindaki fiyat ile sepette yer alan urun fiyatinin dogrulanir");
     }
@@ -126,11 +126,11 @@ public class BeymenStepDefinitions {
     }
 
     @Then("urun sepetten silinerek sepetin bos oldugunun dogrulanmasi {string}")
-    public void urunSepettenSilinerekSepetinBosOldugununDogrulanmasi(String expectetTitle) {
+    public void urunSepettenSilinerekSepetinBosOldugununDogrulanmasi(String expectedTitle) {
         cp.productClearButton.click();
         String actualTitle = cp.emptyCartTitile.getText();
 
-        assertEquals(expectetTitle, actualTitle);
+        assertEquals(expectedTitle, actualTitle);
         LOG.info("Urun sepetten silinerek sepetin bos oldugunun dogrulanir");
     }
 }
