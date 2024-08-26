@@ -1,6 +1,5 @@
 package utilities;
 
-import junit.framework.Assert;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -43,6 +42,15 @@ public class ReusableMethods {
             String cellData = cell.toString();
             return cellData;
         } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    public static void wait(int sn){
+        try {
+            Thread.sleep(sn* 1000);
+        } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }

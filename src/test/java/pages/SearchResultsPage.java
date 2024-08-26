@@ -16,4 +16,7 @@ public class SearchResultsPage {
 
     @FindBy(xpath = "//div[@class='m-productImageList']")
     public List<WebElement> productList;
+
+    @FindBy(id = "productListTitle")
+    public WebElement resultProductTitle;
 }

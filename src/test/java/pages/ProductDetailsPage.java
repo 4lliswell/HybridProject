@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
@@ -19,13 +20,16 @@ public class ProductDetailsPage {
     @FindBy(id = "priceNew")
     public WebElement productPrice;
 
-    @FindBy(xpath = "//span[@class='m-variation__item']")
+    @FindAll({
+            @FindBy(xpath = "//span[@class='m-variation__item']"),
+            @FindBy(xpath = "//span[@class='m-variation__item -criticalStock']")
+    })
     public List<WebElement> productSizeList;
 
     @FindBy(id = "addBasket")
     public WebElement addBasketButton;
 
-    @FindBy(xpath = "//a[@title='Sepetim']")
+    @FindBy(xpath = "//button[@class='m-notification__button btn']")
     public WebElement myBasket;
 
 
