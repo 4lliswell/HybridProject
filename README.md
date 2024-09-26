@@ -1,4 +1,4 @@
-##Proje Ödevi
+# API & UI Hybrid Project
 - Proje Java programlama dilinde yazılmalıdır.
 - Proje Maven projesi olarak yazılmalıdır.
 - Selenium, JUnit ve Log4J kütüphanelerini kullanmanız gerekmektedir.
@@ -34,7 +34,6 @@ Web Servis Otomasyon
 Api Bilgileri
 - https://trello.com/app-key -> Key ve token bilgilerine ulaşabilirsiniz
 - https://developer.atlassian.com/cloud/trello/rest/ -> trello requestlerin listesi.
-  
   Not: Token url ulaşmak için trelloda login olup ayrı bir sekmeden token url’ine gitmeniz gerekmektedir.
 
 
