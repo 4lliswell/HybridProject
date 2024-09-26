@@ -7,7 +7,7 @@
 - Page Object Pattern kullanmanız gerekmektedir.
 
   
-Selenium Web Otomasyon
+## Selenium Web Otomasyon
 - www.beymen.com sitesi açılır.
 - Ana sayfanın açıldığı kontrol edilir.
 - Arama kutucuğuna “şort” kelimesi girilir.(Not = Şort kelimesi excel dosyası üzerinden 1 sütun 1 satırdan alınarak yazılmalıdır. )
@@ -22,7 +22,7 @@ Selenium Web Otomasyon
 - Ürün sepetten silinerek sepetin boş olduğu kontrol edilir.
 
 
-Web Servis Otomasyon
+## Web Servis Otomasyon
 - Proje Java programlama dilinde yazılmalıdır.
 - Proje Maven projesi olarak yazılmalıdır.
 - Rest-Asured kütüphanelerini kullanmanız gerekmektedir.
@@ -31,13 +31,13 @@ Web Servis Otomasyon
 - Page Object Pattern kullanmanız gerekmektedir.
 
   
-Api Bilgileri
+## Api Bilgileri
 - https://trello.com/app-key -> Key ve token bilgilerine ulaşabilirsiniz
 - https://developer.atlassian.com/cloud/trello/rest/ -> trello requestlerin listesi.
   Not: Token url ulaşmak için trelloda login olup ayrı bir sekmeden token url’ine gitmeniz gerekmektedir.
 
 
-Senaryo Adımları
+## Senaryo Adımları
 - Trello üzerinde bir board oluşturunuz.
 - Oluşturduğunuz board’a iki tane kart oluşturunuz.
 - Oluştrduğunuz bu iki karttan random olacak sekilde bir tanesini güncelleyiniz.
