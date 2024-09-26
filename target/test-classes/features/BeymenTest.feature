@@ -1,3 +1,4 @@
+@Beymen
 Feature:Kullanici Beymen Sitesinde Sepete Urun Ekleyip, Cikarabilmeli
 
   Scenario:Kullanici Beymen Sitesinde Sepete Urun Ekleyip, Cikararir
